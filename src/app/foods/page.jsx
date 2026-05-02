@@ -9,9 +9,11 @@ const FoodsPage = async () => {
   return (
     <div>
       <Suspense fallback={<Loading></Loading>}>
-        {foods.map((food) => (
+       <div className="grid grid-cols-3 gap-4">
+         {foods.map((food) => (
           <Foods key={food.id} food={food}></Foods>
         ))}
+       </div>
       </Suspense>
     </div>
   );

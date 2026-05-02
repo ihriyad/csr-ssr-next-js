@@ -6,6 +6,7 @@ const TodosPage  =async () => {
     return (
         <div>
             <h3>Total Todos: {data.length}</h3>
+            <button className='btn btn-accent'>Add todos</button>
         </div>
     );
 };
